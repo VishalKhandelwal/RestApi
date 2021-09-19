@@ -1,0 +1,73 @@
+http://localhost:9090/swagger-ui.html#/
+
+//----------------#POST------------
+http://localhost:9090/api/employees
+{
+      "name": "vishal",
+      "email": "vishal@gmail.com",
+      "gender": "M",
+      "mobileNo": 9876543216,
+      "active": true,
+      "createDate": "2021-09-10",
+      "updateDate": "2021-09-10T20:04:01.814"
+}
+
+
+//-----------#Get----------
+http://localhost:9090/api/employees
+
+//-----------#Get----------
+http://localhost:9090/api/employees/employees/object
+
+//-----------#Get----------
+http://localhost:9090/api/employees/employees/names
+
+//----------------#POST------------
+http://localhost:9090/api/addresses
+{
+  "city": "Jaipur",
+  "country": "India",
+  "createDate": "2021-09-10",
+  "employeeId": 1,  
+  "state": "Rajasthan",
+  "street": "Parasram Nagar",
+  "updateDate": "2021-09-10T15:42:01.897Z"
+}
+
+//-----------#Get----------
+http://localhost:9090/api/addresses
+
+//-----------#Get----------
+http://localhost:9090/api/addresses/employees
+
+//-----------#Get----------
+http://localhost:9090/api/addresses/employees/object
+
+
+//----------------#Different Ways------------
+//----------------#POST------------
+http://localhost:9090/api/different-ways
+{
+      "name": "vishal",
+      "email": "vishal@gmail.com",
+      "gender": "M",
+      "mobileNo": 9876543216,
+      "active": true,
+      "createDate": "2021-09-10",
+      "updateDate": "2021-09-10T20:04:01.814"
+}
+
+//----------------#POST------------
+http://localhost:9090/api/different-ways/map
+{
+    "name": "vishal",
+    "email": "vishal@gmail.com",
+    "gender": "M",
+    "mobileNo": 9876543216
+}
+
+//-----------#Get----------
+http://localhost:9090/api/different-ways?name=vishal
+
+//-----------#Get----------
+http://localhost:9090/api/different-ways/vishal
